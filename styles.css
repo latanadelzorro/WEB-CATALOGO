@@ -417,10 +417,6 @@ nav a.active::after {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.producto:hover .btn-carrito {
-    background-color: var(--color-secundario);
-    color: white;
-}
 
 .producto-cabecera {
     display: flex;
@@ -569,19 +565,10 @@ nav a.active::after {
     color: var(--color-primario);
 }
 
-.producto-precio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
+.producto-acciones {
+    margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid var(--color-borde);
-}
-
-.precio {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--color-secundario);
 }
 
 /* Botón de Instagram */
@@ -608,34 +595,6 @@ nav a.active::after {
 
 .btn-instagram i {
     font-size: 1.1rem;
-}
-
-.btn-carrito {
-    background-color: transparent;
-    color: var(--color-primario);
-    border: 2px solid var(--color-primario);
-    border-radius: 50px;
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.btn-carrito i {
-    transition: transform 0.3s ease;
-}
-
-.btn-carrito:hover i {
-    transform: translateX(3px);
-}
-
-.btn-carrito:hover {
-    background-color: var(--color-secundario);
-    transform: translateY(-3px);
 }
 
 /* Sección Sobre Nosotros */
@@ -1003,55 +962,81 @@ footer {
     animation-delay: 0.6s;
 }
 
-/* Botón de WhatsApp flotante */
-.whatsapp-button {
+/* Botón de Instagram flotante */
+.instagram-button {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #25D366;
-    color: white !important;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    color: white;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-    z-index: 1000;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-decoration: none;
-    overflow: hidden;
     animation: pulse 2s infinite;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.whatsapp-button span {
-    display: none;
-    margin-left: 10px;
+.instagram-button span {
+    opacity: 0;
+    width: 0;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.whatsapp-button:hover {
-    width: auto;
-    padding: 0 25px;
+.instagram-button i {
+    position: absolute;
+    left: 15px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: scale(1);
+}
+
+.instagram-button:hover {
+    width: 220px;
+    padding: 0 25px 0 60px;
     border-radius: 30px;
-    background: #128C7E;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(193, 53, 132, 0.4);
 }
 
-.whatsapp-button:hover span {
+.instagram-button:hover span {
+    opacity: 1;
+    width: auto;
+    margin-left: 15px;
     display: inline-block;
+}
+
+.instagram-button:hover i {
+    transform: scale(1) translateX(0);
+    left: 15px;
+}
+
+.instagram-button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(193, 53, 132, 0.3);
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        box-shadow: 0 0 0 0 rgba(193, 53, 132, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 15px rgba(193, 53, 132, 0);
     }
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);

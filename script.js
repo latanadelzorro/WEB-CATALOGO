@@ -3,18 +3,18 @@ const productos = [
     {
         id: 1,
         nombre: "Roscos de Vino",
-        descripcion: "Deliciosos roscos esponjosos con un toque de vino tinto. Ingredientes: Harina de trigo, azúcar, huevo, vino tinto, aceite de girasol, levadura, canela y ajonjolí.",
-        precio: 12.50,
+        descripcion: "Deliciosos roscos esponjosos con un toque de vino tinto.",
+        ingredientes: "Harina de trigo, azúcar, huevo, vino tinto, aceite de girasol, levadura, canela y ajonjolí",
         categoria: "tradicional",
         imagen: "imagenes/roscos-vino.jpeg",
-        alergenos: ["Gluten", "Huevo", "Sésamo (ajonjolí)"],
+        alergenos: ["Gluten", "Huevo", "Sésamo (ajonjili)"],
         destacado: true
     },
     {
         id: 2,
         nombre: "Tiramisú",
-        descripcion: "Clásico postre italiano con capas de café y mascarpone. Ingredientes: Queso mascarpone, huevos, azúcar, café, bizcochos de soletilla, cacao en polvo y licor de café (opcional).",
-        precio: 15.90,
+        descripcion: "Clásico postre italiano con capas de café y mascarpone.",
+        ingredientes: "Queso mascarpone, huevos, azúcar, café, bizcochos de soletilla, cacao en polvo y licor de café (opcional)",
         categoria: "tradicional",
         imagen: "imagenes/tiramisu.jpg",
         alergenos: ["Gluten", "Huevo", "Lacteos", "Cafeína"],
@@ -23,18 +23,18 @@ const productos = [
     {
         id: 3,
         nombre: "Polvorones",
-        descripcion: "Tradicionales polvorones de almendra, esponjosos y sabrosos. Ingredientes: Harina de trigo, azúcar, almendra molida, canela, ajonjolí, limón y manteca de cerdo.",
-        precio: 9.90,
+        descripcion: "Tradicionales polvorones de almendra, esponjosos y sabrosos.",
+        ingredientes: "Harina de trigo, azúcar, almendra molida, canela, ajonjili, limón y manteca de cerdo",
         categoria: "navideno",
         imagen: "imagenes/polvorones.jpeg",
         alergenos: ["Gluten", "Frutos secos (almendra)", "Sésamo (ajonjili)", "Sulfitos"],
-        destacado: true
+        destacado: false
     },
     {
         id: 4,
         nombre: "Mantecados",
-        descripcion: "Clásicos mantecados de canela, suaves y aromáticos. Ingredientes: Harina de trigo, azúcar, manteca de cerdo, canela, ajonjolí y limón.",
-        precio: 8.50,
+        descripcion: "Clásicos mantecados de canela, suaves y aromáticos.",
+        ingredientes: "Harina de trigo, azúcar, manteca de cerdo, canela, ajonjili y limón",
         categoria: "navideno",
         imagen: "imagenes/mantecados.jpeg",
         alergenos: ["Gluten", "Sésamo (ajonjili)", "Sulfitos"],
@@ -43,8 +43,8 @@ const productos = [
     {
         id: 5,
         nombre: "Tronco de Navidad",
-        descripcion: "Delicioso bizcocho enrollado con crema de chocolate. Ingredientes: Huevos, azúcar, harina de trigo, cacao en polvo, nata para montar, chocolate negro y azúcar glass.",
-        precio: 24.90,
+        descripcion: "Delicioso bizcocho enrollado con crema de chocolate.",
+        ingredientes: "Huevos, azúcar, harina de trigo, cacao en polvo, nata para montar, chocolate negro y azúcar glass",
         categoria: "navideno",
         imagen: "imagenes/tronco de navida.jpeg",
         alergenos: ["Gluten", "Huevo", "Lacteos", "Frutos secos (puede contener trazas)"],
@@ -53,8 +53,8 @@ const productos = [
     {
         id: 6,
         nombre: "Galletas de Jengibre",
-        descripcion: "Divertidas galletas con forma de muñeco de jengibre. Ingredientes: Harina de trigo, miel, azúcar moreno, mantequilla, huevo, jengibre, canela, clavo y bicarbonato.",
-        precio: 10.50,
+        descripcion: "Divertidas galletas con forma de muñeco de jengibre.",
+        ingredientes: "Harina de trigo, miel, azúcar moreno, mantequilla, huevo, jengibre, canela, clavo y bicarbonato",
         categoria: "navideno",
         imagen: "imagenes/galletas gengibre.jpeg",
         alergenos: ["Gluten", "Huevo", "Lacteos"],
@@ -63,8 +63,8 @@ const productos = [
     {
         id: 7,
         nombre: "Turrón Artesanal",
-        descripcion: "Turrón blando de almendra con miel de la mejor calidad. Ingredientes: Almendra tostada, miel, azúcar, clara de huevo, oblea y canela.",
-        precio: 18.90,
+        descripcion: "Turrón blando de almendra con miel de la mejor calidad.",
+        ingredientes: "Almendra tostada, miel, azúcar, clara de huevo, oblea y canela",
         categoria: "navideno",
         imagen: "imagenes/turron artesanal.jpeg",
         alergenos: ["Frutos secos (almendra)", "Huevo", "Gluten (trazas)"],
@@ -73,8 +73,8 @@ const productos = [
     {
         id: 8,
         nombre: "Magdalenas Caseras",
-        descripcion: "Esponjosas magdalenas caseras con toque de limón, recién horneadas. Ingredientes: Harina de trigo, azúcar, huevos, aceite de girasol, leche, ralladura de limón, levadura y azúcar glass.",
-        precio: 7.90,
+        descripcion: "Esponjosas magdalenas caseras con toque de limón, recién horneadas.",
+        ingredientes: "Harina de trigo, azúcar, huevos, aceite de girasol, leche, ralladura de limón, levadura y azúcar glass",
         categoria: "tradicional",
         imagen: "imagenes/macdalenas.jpeg",
         alergenos: ["Gluten", "Huevo", "Lacteos"],
@@ -83,8 +83,8 @@ const productos = [
     {
         id: 9,
         nombre: "Roscón de Reyes",
-        descripcion: "Especialidad navideña rellena de nata y decorada con fruta confitada. Ingredientes: Harina de trigo, huevos, azúcar, mantequilla, leche, ralladura de naranja, agua de azahar, almendras y fruta confitada.",
-        precio: 22.90,
+        descripcion: "Especialidad navideña rellena de nata y decorada con fruta confitada.",
+        ingredientes: "Harina de trigo, huevos, azúcar, mantequilla, leche, ralladura de naranja, agua de azahar, almendras y fruta confitada",
         categoria: "navideno",
         imagen: "imagenes/rosconreyes.jpeg",
         alergenos: ["Gluten", "Huevo", "Lacteos", "Frutos secos (almendra)", "Sulfitos (fruta confitada)"],
@@ -93,8 +93,8 @@ const productos = [
     {
         id: 10,
         nombre: "Hojaldrinas",
-        descripcion: "Delicadas pastas de hojaldre espolvoreadas con azúcar glass. Ingredientes: Harina de trigo, mantequilla, agua, sal y azúcar glass.",
-        precio: 11.50,
+        descripcion: "Delicadas pastas de hojaldre espolvoreadas con azúcar glass.",
+        ingredientes: "Harina de trigo, mantequilla, agua, sal y azúcar glass",
         categoria: "tradicional",
         imagen: "imagenes/hojaldrinas.jpeg",
         alergenos: ["Gluten", "Lacteos"],
@@ -103,98 +103,58 @@ const productos = [
 ];
 
 // Variables globales
-let carrito = [];
 let filtroActual = 'todos';
 
 // Inicialización
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
     cargarProductos();
     inicializarFiltros();
     inicializarNavbar();
     inicializarFormularioContacto();
     inicializarAnimaciones();
-});
+}
 
 // Cargar productos en la página
-function cargarProductos() {
+function cargarProductos(filtro = 'todos') {
     const productosGrid = document.querySelector('.productos-grid');
     if (!productosGrid) return;
 
-    // Filtrar productos según el filtro actual
+    // Filtrar productos según la categoría seleccionada
     let productosFiltrados = [];
-    if (filtroActual === 'todos') {
-        productosFiltrados = productos;
+    if (filtro === 'todos') {
+        productosFiltrados = [...productos];
     } else {
-        productosFiltrados = productos.filter(producto => producto.categoria === filtroActual);
+        productosFiltrados = productos.filter(producto => producto.categoria === filtro);
     }
+
+    // Ordenar productos: primero los destacados
+    productosFiltrados.sort((a, b) => b.destacado - a.destacado);
 
     // Generar el HTML de los productos
     let html = '';
-    productosFiltrados.forEach((producto, index) => {
-        // Crear iconos de alérgenos con tooltips
-        const alergenosHTML = producto.alergenos.map(alergeno => {
-            let icono = 'fa-exclamation-triangle'; // Icono por defecto
-            let tooltip = alergeno;
-            
-            // Asignar iconos específicos según el tipo de alérgeno
-            if (alergeno.toLowerCase().includes('gluten')) {
-                icono = 'fa-bread-slice';
-                tooltip = 'Contiene gluten';
-            } else if (alergeno.toLowerCase().includes('huevo')) {
-                icono = 'fa-egg';
-                tooltip = 'Contiene huevo';
-            } else if (alergeno.toLowerCase().includes('lacteo')) {
-                icono = 'fa-cheese';
-                tooltip = 'Contiene lácteos';
-            } else if (alergeno.toLowerCase().includes('fruto') || alergeno.toLowerCase().includes('almendra')) {
-                icono = 'fa-seedling';
-                tooltip = 'Contiene frutos secos';
-            } else if (alergeno.toLowerCase().includes('sésamo') || alergeno.toLowerCase().includes('ajonjil')) {
-                icono = 'fa-seedling';
-                tooltip = 'Contiene sésamo';
-            } else if (alergeno.toLowerCase().includes('sulfito')) {
-                icono = 'fa-wine-bottle';
-                tooltip = 'Contiene sulfitos';
-            } else if (alergeno.toLowerCase().includes('cafeína')) {
-                icono = 'fa-coffee';
-                tooltip = 'Contiene cafeína';
-            }
-            
-            return `<div class="alergeno-tooltip">
-                <i class="fas ${icono}" title="${tooltip}"></i>
-                <span class="tooltip-text">${tooltip}</span>
-            </div>`;
-        }).join('');
-        
+    productosFiltrados.forEach(producto => {
         const esNuevo = producto.destacado ? '<span class="etiqueta-nuevo">Destacado</span>' : '';
         
-        // Formatear la descripción para mostrar ingredientes en un párrafo separado
-        const descripcionPartes = producto.descripcion.split(' Ingredientes: ');
-        const descripcionCorta = descripcionPartes[0];
-        const ingredientes = descripcionPartes.length > 1 ? descripcionPartes[1] : '';
-        
         html += `
-            <div class="producto animar retraso-${index % 3}" data-categoria="${producto.categoria}">
+            <div class="producto" data-categoria="${producto.categoria}">
                 ${esNuevo}
                 <div class="producto-imagen">
                     <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
                 </div>
                 <div class="producto-info">
                     <div class="producto-cabecera">
-                        <span class="producto-categoria">${producto.categoria === 'navideno' ? '🎄 Navideño' : '🍰 Tradicional'}</span>
-                        <div class="alergenos">${alergenosHTML}</div>
+                        <span class="producto-categoria">${getCategoriaIcono(producto.categoria)} ${capitalizeFirstLetter(producto.categoria)}</span>
+                        <div class="alergenos">
+                            ${getAlergenosIcons(producto.alergenos).join('')}
+                        </div>
                     </div>
                     <h3>${producto.nombre}</h3>
-                    <p class="descripcion">${descripcionCorta}</p>
-                    ${ingredientes ? `<div class="ingredientes"><strong>Ingredientes:</strong> ${ingredientes}</div>` : ''}
+                    <p class="descripcion">${producto.descripcion}</p>
+                    <div class="ingredientes">
+                        <strong>Ingredientes:</strong> ${producto.ingredientes}
+                    </div>
                     <div class="alergenos-lista">
                         <strong>Alérgenos:</strong> ${producto.alergenos.join(', ')}
-                    </div>
-                    <div class="producto-precio">
-                        <span class="precio">${producto.precio.toFixed(2)} €</span>
-                        <button class="btn-carrito" data-id="${producto.id}" aria-label="Añadir ${producto.nombre} al carrito">
-                            <i class="fas fa-shopping-cart"></i> Añadir
-                        </button>
                     </div>
                 </div>
             </div>
@@ -202,11 +162,48 @@ function cargarProductos() {
     });
 
     productosGrid.innerHTML = html;
-    
-    // Agregar eventos a los botones del carrito
-    document.querySelectorAll('.btn-carrito').forEach(boton => {
-        boton.addEventListener('click', agregarAlCarrito);
+}
+
+// Obtener icono de categoría
+function getCategoriaIcono(categoria) {
+    const iconos = {
+        'tradicional': '🍰',
+        'navideno': '🎄'
+    };
+    return iconos[categoria] || '🍽️';
+}
+
+// Obtener iconos de alérgenos
+function getAlergenosIcons(alergenos) {
+    const iconos = {
+        'Gluten': 'fas fa-bread-slice',
+        'Huevo': 'fas fa-egg',
+        'Lacteos': 'fas fa-cheese',
+        'Frutos secos': 'fas fa-seedling',
+        'Frutos secos (almendra)': 'fas fa-seedling',
+        'Sésamo (ajonjili)': 'fas fa-seedling',
+        'Cafeína': 'fas fa-coffee',
+        'Sulfitos': 'fas fa-wine-bottle',
+        'Sulfitos (fruta confitada)': 'fas fa-wine-bottle',
+        'Gluten (trazas)': 'fas fa-bread-slice',
+        'Frutos secos (puede contener trazas)': 'fas fa-seedling'
+    };
+
+    return alergenos.map(alergeno => {
+        const icono = iconos[alergeno] || 'fas fa-exclamation-triangle';
+        return `
+            <div class="alergeno-tooltip">
+                <i class="${icono}" title="${alergeno}"></i>
+                <span class="tooltip-text">${alergeno}</span>
+            </div>
+        `;
     });
+}
+
+
+// Capitalizar primera letra
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 // Inicializar los filtros de categoría
@@ -215,15 +212,16 @@ function inicializarFiltros() {
     
     botonesFiltro.forEach(boton => {
         boton.addEventListener('click', () => {
-            // Remover la clase active de todos los botones
-            botonesFiltro.forEach(btn => btn.classList.remove('active'));
-            
-            // Agregar la clase active al botón clickeado
+            // Actualizar botones activos
+            document.querySelector('.filtro-btn.active').classList.remove('active');
             boton.classList.add('active');
             
-            // Actualizar el filtro actual y recargar productos
-            filtroActual = boton.dataset.categoria;
-            cargarProductos();
+            // Filtrar productos
+            const categoria = boton.dataset.categoria;
+            cargarProductos(categoria);
+            
+            // Actualizar el estado del filtro
+            filtroActual = categoria;
         });
     });
 }
@@ -231,192 +229,142 @@ function inicializarFiltros() {
 // Inicializar la barra de navegación
 function inicializarNavbar() {
     const header = document.querySelector('header');
-    const menuLinks = document.querySelectorAll('nav a');
+    const menuToggle = document.createElement('button');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    menuToggle.setAttribute('aria-label', 'Menú de navegación');
     
-    // Cambiar el header al hacer scroll
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        } else {
-            header.style.background = 'white';
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
-        }
-    });
-    
-    // Smooth scroll para los enlaces del menú
-    menuLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
+    const nav = document.querySelector('nav');
+    if (nav) {
+        // Agregar botón de menú móvil
+        header.insertBefore(menuToggle, nav);
+        
+        // Alternar menú en móviles
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
             
-            const targetId = link.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-                
-                // Cerrar el menú móvil si está abierto
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-                    navbarCollapse.classList.remove('show');
-                }
+            // Cambiar ícono
+            const icon = menuToggle.querySelector('i');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             }
         });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const enlaces = nav.querySelectorAll('a');
+        enlaces.forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    }
+    
+    // Cambiar estilo del header al hacer scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     });
 }
 
 // Inicializar el formulario de contacto
 function inicializarFormularioContacto() {
-    const formulario = document.querySelector('.formulario-contacto');
+    const formulario = document.querySelector('.contacto-form');
     if (!formulario) return;
     
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
-        
         // Aquí iría la lógica para enviar el formulario
-        const formData = new FormData(formulario);
-        const datos = Object.fromEntries(formData);
-        
-        // Simular envío exitoso
-        alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+        mostrarNotificacion('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
         formulario.reset();
     });
 }
 
 // Inicializar animaciones
 function inicializarAnimaciones() {
-    // Configurar el Intersection Observer para las animaciones
+    // Animación de entrada para los productos
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
     
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animar');
+                entry.target.classList.add('visible');
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
     
-    // Observar elementos con la clase 'animar'
-    document.querySelectorAll('.animar').forEach(elemento => {
-        observer.observe(elemento);
+    // Observar todos los productos
+    document.querySelectorAll('.producto').forEach(producto => {
+        observer.observe(producto);
     });
-}
-
-// Función para agregar productos al carrito
-function agregarAlCarrito(e) {
-    const id = parseInt(e.currentTarget.dataset.id);
-    const producto = productos.find(p => p.id === id);
-    
-    if (!producto) return;
-    
-    // Verificar si el producto ya está en el carrito
-    const productoEnCarrito = carrito.find(item => item.id === id);
-    
-    if (productoEnCarrito) {
-        // Si ya está en el carrito, incrementar la cantidad
-        productoEnCarrito.cantidad += 1;
-    } else {
-        // Si no está en el carrito, agregarlo
-        carrito.push({
-            ...producto,
-            cantidad: 1
-        });
-    }
-    
-    // Mostrar notificación
-    mostrarNotificacion(`¡${producto.nombre} añadido al carrito!`);
-    
-    // Actualizar el contador del carrito
-    actualizarContadorCarrito();
-    
-    // Guardar en localStorage
-    guardarCarrito();
 }
 
 // Mostrar notificación
 function mostrarNotificacion(mensaje) {
+    // Crear el contenedor de notificaciones si no existe
+    let notificaciones = document.querySelector('.notificaciones');
+    if (!notificaciones) {
+        notificaciones = document.createElement('div');
+        notificaciones.className = 'notificaciones';
+        document.body.appendChild(notificaciones);
+    }
+    
+    // Crear la notificación
     const notificacion = document.createElement('div');
     notificacion.className = 'notificacion';
     notificacion.textContent = mensaje;
     
-    // Estilos para la notificación
-    notificacion.style.position = 'fixed';
-    notificacion.style.bottom = '20px';
-    notificacion.style.right = '20px';
-    notificacion.style.backgroundColor = '#27ae60';
-    notificacion.style.color = 'white';
-    notificacion.style.padding = '15px 25px';
-    notificacion.style.borderRadius = '5px';
-    notificacion.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-    notificacion.style.zIndex = '1000';
-    notificacion.style.transform = 'translateY(100px)';
-    notificacion.style.opacity = '0';
-    notificacion.style.transition = 'all 0.3s ease-out';
+    // Agregar la notificación al contenedor
+    notificaciones.appendChild(notificacion);
     
-    document.body.appendChild(notificacion);
-    
-    // Animación de entrada
+    // Mostrar la notificación
     setTimeout(() => {
-        notificacion.style.transform = 'translateY(0)';
-        notificacion.style.opacity = '1';
-    }, 100);
+        notificacion.classList.add('show');
+    }, 10);
     
-    // Eliminar la notificación después de 3 segundos
+    // Ocultar y eliminar la notificación después de 3 segundos
     setTimeout(() => {
-        notificacion.style.transform = 'translateY(100px)';
-        notificacion.style.opacity = '0';
-        
-        // Eliminar el elemento después de la animación
+        notificacion.classList.remove('show');
         setTimeout(() => {
-            document.body.removeChild(notificacion);
+            notificacion.remove();
+            // Si no hay más notificaciones, eliminar el contenedor
+            if (notificaciones.children.length === 0) {
+                notificaciones.remove();
+            }
         }, 300);
     }, 3000);
-}
-
-// Actualizar el contador del carrito
-function actualizarContadorCarrito() {
-    const contador = document.getElementById('contador-carrito');
-    if (!contador) return;
-    
-    const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
-    contador.textContent = totalItems;
-    contador.style.display = totalItems > 0 ? 'flex' : 'none';
-}
-
-// Guardar el carrito en localStorage
-function guardarCarrito() {
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-}
-
-// Cargar el carrito desde localStorage
-function cargarCarrito() {
-    const carritoGuardado = localStorage.getItem('carrito');
-    if (carritoGuardado) {
-        carrito = JSON.parse(carritoGuardado);
-        actualizarContadorCarrito();
-    }
 }
 
 // Inicializar todo cuando el documento esté listo
 document.addEventListener('DOMContentLoaded', () => {
     // Cargar productos y funcionalidades
     cargarProductos();
-    inicializarFiltros();
-    inicializarNavbar();
-    inicializarFormularioContacto();
-    inicializarAnimaciones();
-    cargarCarrito();
     
-    // Forzar la recarga de los productos después de un breve retraso
-    setTimeout(() => {
-        cargarProductos();
-    }, 100);
+    // Inicializar tooltips de alérgenos
+    if (typeof tippy === 'function') {
+        tippy('[data-tippy-content]');
+    }
+    
+    // Inicializar animaciones de scroll
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    }
 });
