@@ -66,7 +66,7 @@ const productos = [
         descripcion: "Crujientes palmeras de hojaldre caramelizadas.",
         ingredientes: "Harina de trigo, mantequilla, azúcar, sal",
         categoria: "tradicional",
-        imagen: "imagenes/palmeras.jpeg",
+        imagen: "imagenes/palmeras.avif",
         alergenos: ["Gluten", "Lacteos"],
         destacado: false
     },
@@ -76,7 +76,7 @@ const productos = [
         descripcion: "Dulce tradicional con una fina lámina de bizcocho y crema tostada.",
         ingredientes: "Harina de trigo, huevos, azúcar, leche, canela y licor",
         categoria: "tradicional",
-        imagen: "imagenes/piononos.jpeg",
+        imagen: "imagenes/pionono.webp",
         alergenos: ["Gluten", "Huevo", "Lacteos"],
         destacado: false
     },
@@ -86,8 +86,18 @@ const productos = [
         descripcion: "Roscos tradicionales cubiertos de una fina capa de azúcar glass.",
         ingredientes: "Harina de trigo, azúcar, huevos, aceite de girasol, anís y azúcar glass",
         categoria: "tradicional",
-        imagen: "imagenes/roscos-azucar.jpeg",
+        imagen: "imagenes/roscosdeazucar.jpg",
         alergenos: ["Gluten", "Huevo"],
+        destacado: false
+    },
+    {
+        id: 14,
+        nombre: "Pestiños",
+        descripcion: "Dulces fritos bañados en miel, típicos de la repostería andaluza.",
+        ingredientes: "Harina de trigo, vino blanco, aceite de oliva, ajonjolí, anís, miel, azúcar, canela y sal",
+        categoria: "tradicional",
+        imagen: "imagenes/pestiños.jpg",
+        alergenos: ["Gluten", "Sésamo (ajonjili)", "Sulfitos (vino)", "Miel"],
         destacado: false
     }
 ];
@@ -123,20 +133,15 @@ function cargarProductos(filtro = 'todos') {
     // Generar el HTML de los productos
     let html = '';
     productosFiltrados.forEach(producto => {
-        const esNuevo = producto.destacado ? '<span class="etiqueta-nuevo">Destacado</span>' : '';
-        
         html += `
             <div class="producto" data-categoria="${producto.categoria}">
-                ${esNuevo}
                 <div class="producto-imagen">
                     <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
                 </div>
                 <div class="producto-info">
                     <div class="producto-cabecera">
                         <span class="producto-categoria">${getCategoriaIcono(producto.categoria)} ${capitalizeFirstLetter(producto.categoria)}</span>
-                        <div class="alergenos">
-                            ${getAlergenosIcons(producto.alergenos).join('')}
-                        </div>
+                        ${getAlergenosIcons(producto.alergenos).join('')}
                     </div>
                     <h3>${producto.nombre}</h3>
                     <p class="descripcion">${producto.descripcion}</p>
