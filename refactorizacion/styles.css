@@ -418,28 +418,30 @@ footer {
     color: #E8D9C5;
 }
 
-/* Botón de Instagram flotante */
-.instagram-button {
+/* Botón de WhatsApp flotante */
+.whatsapp-button {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    background: #25D366;  /* Verde de WhatsApp */
+    color: white;
     width: 60px;
     height: 60px;
-    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-    color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.8rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    text-decoration: none;
     z-index: 100;
 }
 
-.instagram-button:hover {
+.whatsapp-button:hover {
     transform: scale(1.1) translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: #128C7E;  /* Verde de WhatsApp más oscuro al pasar el ratón */
 }
 
 /* Responsive */
@@ -539,11 +541,11 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    /* Botón de Instagram flotante */
-    .instagram-button {
+    /* Botón de WhatsApp flotante */
+    .whatsapp-button {
         width: 50px;
         height: 50px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         bottom: 20px;
         right: 20px;
     }
